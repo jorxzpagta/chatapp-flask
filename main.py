@@ -15,6 +15,13 @@ def handle_message(message):
         send(message, broadcast=True)
 
 
+@socketio.on('sendMessage')
+def handle_my_custom_event(message):
+    print("Received message: " + message)
+    if message != "User Connected!":
+        emit(message, broadcast=True)
+
+
 # Navigation
 @app.route('/')
 def index():
