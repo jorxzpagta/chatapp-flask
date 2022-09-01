@@ -21,6 +21,11 @@ function updateMessageDisplay(){
     updateScrollbar();
     });
 
+    socket.on((arg1) => {
+    $('#chat-content').append($('<p>').text(arg1)); // 1
+    updateScrollbar();
+    });
+
 }
 
 //jquery
@@ -37,7 +42,7 @@ $(document).ready(function(){
 // on Press Enter
     $("#msg_Box").on('keypress', function(event){
     if (event.key == "Enter") {
-    socket.send($('#username').val() + ": " + $('#msg_Box').val());
+    socket.emit('sendMessage', $('#username').val() + ": " + $('#msg_Box').val());
     $('#msg_Box').val('');
     }
     });
