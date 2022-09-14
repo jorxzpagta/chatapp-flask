@@ -1,5 +1,18 @@
 @font-face { font-family: Arial !important; font-display: swap !important; }
 
+
+.gradient-custom {
+/* fallback for old browsers */
+background: #6a11cb;
+
+/* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+}
+
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -120,7 +133,7 @@ h4.card-title {
 }
 
 .media {
-    padding: 16px 12px;
+    padding: 6px 12px;
     -webkit-transition: background-color .2s linear;
     transition: background-color .2s linear;
 }
@@ -155,11 +168,11 @@ h4.card-title {
 .media-chat .media-body p {
     position: relative;
     padding: 6px 8px;
-    margin: 4px 0;
-    background-color: #f5f6f7;
+    margin: 0px 0;
+    background-color: #28a745;
     border-radius: 3px;
     font-weight: 100;
-    color:#9b9b9b;
+    color: rgb(255 255 255);
 }
 
 .media>* {
@@ -170,6 +183,8 @@ h4.card-title {
     background-color: transparent !important;
     padding: 0;
     opacity: .8;
+    size: 1;
+    color: gray;
 }
 
 .media-meta-day {
@@ -184,7 +199,7 @@ h4.card-title {
 }
 
 .media {
-    padding: 16px 12px;
+    padding: 5px 12px;
     -webkit-transition: background-color .2s linear;
     transition: background-color .2s linear;
 }
@@ -225,7 +240,7 @@ h4.card-title {
 }
 
 .media {
-    padding: 16px 12px;
+    padding: 5px 12px;
     -webkit-transition: background-color .2s linear;
     transition: background-color .2s linear;
 }
@@ -236,15 +251,6 @@ h4.card-title {
     background-color: #48b0f7;
     color: #fff;
 }
-
-.media-chat .media-body p {
-    position: relative;
-    padding: 6px 8px;
-    margin: 4px 0;
-    background-color: #f5f6f7;
-    border-radius: 3px;
-}
-
 
 .border-light {
     border-color: #f1f2f3 !important;
