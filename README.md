@@ -12,8 +12,6 @@ pip install flask
 pip install flask-socketio
 pip install simple-websocket
 
-## To-Dos
--> Add a front page to ask for their name.
--> Fix the chat content and the messages inside it.
+## To-Dost.
 -> Use Database for message log.
 -> Ill think of more to add.
